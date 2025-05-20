@@ -1,3 +1,5 @@
+package generics;
+
 public class Laptop {
     private String brand;
 
@@ -7,6 +9,6 @@ public class Laptop {
 
     @Override
     public String toString() {
-        return "Laptop: " + brand;
+        return "generics.Laptop: " + brand;
     }
 }

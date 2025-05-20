@@ -1,3 +1,5 @@
+package generics;
+
 public class Chihuahua {
     private String name;
 
@@ -7,6 +9,6 @@ public class Chihuahua {
 
     @Override
     public String toString() {
-        return "Chihuahua: " + name;
+        return "generics.Chihuahua: " + name;
     }
 }
