@@ -1,6 +1,6 @@
 package interfaces.Transfarable;
 
-public class Transformer implements Transferable{
+public class Transformer implements Transformable {
     private String name;
     private boolean transformed;
 

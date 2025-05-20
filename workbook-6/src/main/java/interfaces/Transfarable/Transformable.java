@@ -1,5 +1,5 @@
 package interfaces.Transfarable;
 
-public interface Transferable {
+public interface Transformable {
     void transform();
 }
