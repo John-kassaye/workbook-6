@@ -21,10 +21,10 @@ public class Main {
             // alternate way
             if (calculable instanceof Adder){
                 Adder adder = (Adder) calculable ;
-//                System.out.println("Adder: " + adder.calculate(num1,num2));
+                System.out.println("Adder: " + adder.calculate(num1,num2));
             }
             else if (calculable instanceof Multiplier Multiplier){
-//                System.out.println("Multiplier: " + Multiplier.calculate(num1,num2));
+                System.out.println("Multiplier: " + Multiplier.calculate(num1,num2));
             }
         }
 
