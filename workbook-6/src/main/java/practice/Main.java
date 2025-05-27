@@ -1,6 +1,7 @@
 package practice;
 
 import java.util.*;
+import java.util.stream.Stream;
 import javax.swing.JOptionPane;
 
 public class Main {
@@ -17,8 +18,9 @@ public class Main {
 //        JOptionPane.showMessageDialog(null,"Your name is:" + n);
 
 
-        List<Integer> a = Arrays.asList(2,2,3,44,5);
+        List<Integer> a = Arrays.asList(62,27,33,44,5);
         List<String> b = Arrays.asList("John","Zidane","Henry");
+
 
         A some = new A() {
             @Override
@@ -30,6 +32,14 @@ public class Main {
 
         A some1 = message -> message;
         System.out.println(some1.print("Suiiiiiiiiiiiiiiiiiii"));
+        System.out.println("*************");
+        System.out.println("*************");
+
+        a.stream()
+                .filter(n -> n%2 == 1)
+                .map(n -> n*2)
+                .sorted()
+                .forEach(System.out::println);
 
 //        printStudent();
     }
@@ -43,10 +53,13 @@ public class Main {
             students.add(new Student("Anthony","Somewhere",41));
 
 
-            Collections.sort(students,com);
-            for (Student student : students){
-                System.out.println(student.toString());
-            }
+            students.sort(com);
+            students.forEach(s -> System.out.println(s));
+            students.forEach(System.out::println);
+            System.out.println(students.stream().count());
+
+
+
 
     }
 }
